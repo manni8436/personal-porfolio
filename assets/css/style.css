@@ -1,0 +1,44 @@
+:root {
+	--black: #000;
+	--white: #fff;
+	--light-blue: #008895;
+}
+
+body {
+	background-image: url('../images/coding-image.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: var(--white);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+/*-----------------------------------------------------footer*/
+.footer {
+	background-color: #202020;
+	margin-top: auto;
+	border-top: 2px #FFBE5B solid;
+}
+
+.copyright {
+	margin: 10px;
+	color: #FFBE5B;
+	text-transform: uppercase;
+}
+
+.social-media {
+	text-align: center;
+	margin-bottom: 0;    
+	padding: 0;
+}
+
+.social-media li {
+	font-size: 30px;
+	display: inline;
+	text-transform: uppercase;
+}
+
+a {
+	color: #ffbe5b;  
+}
