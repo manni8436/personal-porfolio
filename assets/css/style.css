@@ -5,25 +5,75 @@
 }
 
 body {
-	background-image: url('../images/coding-image.jpg');
-	background-repeat: no-repeat;
+	background: var(--white) url('../images/coding-image.jpg') no-repeat;
 	background-size: 100%;
-	background-color: var(--white);
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 }
 
+/* nav menu */
+
+.navbar {
+	background-color: var(--white);
+	border-bottom: var(--black) 3px solid; 
+}
+
+.navbar-brand {
+	color: var(--black);
+	text-transform: uppercase;
+}
+
+.nav-item a {
+	color: var(--black);
+	text-transform: uppercase;
+}
+
+/* home page header and paragraph */
+
+.page-header {
+	font-size: 1.1rem;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+.index-p {
+	background-color: var(--white);
+	color: var(--black);
+	border: var(--black) 3px solid; 
+	margin: 25px;
+	padding: 18px 10px;
+	font-size: 1rem;
+	text-align: center;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+.index-p p {
+	margin-top: 10px;
+}
+
+.btn {
+	background-color: var(--black);
+	border-color: var(--black);
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.btn a {
+	color: var(--white);
+}
+
 /*-----------------------------------------------------footer*/
 .footer {
-	background-color: #202020;
+	background-color: var(--white);
 	margin-top: auto;
-	border-top: 2px #FFBE5B solid;
+	border-top: var(--black) 3px solid;
 }
 
 .copyright {
 	margin: 10px;
-	color: #FFBE5B;
+	color: var(--black);
 	text-transform: uppercase;
 }
 
@@ -40,5 +90,124 @@ body {
 }
 
 a {
-	color: #ffbe5b;  
+	color: var(--black); 
+}
+
+.education-p {
+	text-transform: uppercase;
+	margin-top: 8px;
+	font-size: 16px;
+}
+
+/* active */
+
+.active {
+	color: var(--black) !important;
+}
+
+/* hover */
+
+.btn a:hover {
+	color: var(--light-blue);
+}
+
+/* animation */
+
+.nav-item a {
+	position: relative;
+	color: var(--light-blue);
+	text-decoration: none;
+}
+
+.nav-item a:hover {
+	color: var(--light-blue) !important;
+}
+
+.nav-item a::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: var(--light-blue);
+	transform: scaleX(0);
+	transition: transform 0.3s ease;
+}
+
+.nav-item a:hover::before {
+	transform: scaleX(1);
+}
+
+/*----------------------------------------------active */
+.nav-item a:active::before { 
+	transform: scaleX(1); 
+	/* this works but it's not working 100% the way it should, as the underline affect only stays in place if you drag the nav item first, unsure why*/
+}
+
+/* dark mode */
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: var(--black);
+	}
+
+	/* nav menu */
+
+.navbar {
+	background-color: var(--black);
+	border-bottom: var(--light-blue) 3px solid;
+}
+
+.navbar-brand,
+.nav-item a {
+	color: var(--light-blue) !important;
+}
+
+	.index-p {
+		background-color: var(--black);
+		border: var(--light-blue) 3px solid;
+		text-decoration: none;
+		color: var(--white);
+		margin: 25px;
+		padding: 10px;
+		font-size: 1rem;
+		text-align: center;
+		opacity: 0.8;
+	}
+
+	.btn {
+		background-color: var(--white);
+		color: var(--black);
+		border-color: var(--light-blue);
+	}
+	
+	.btn a {
+		color: var(--black);
+		text-decoration: none;
+	}
+	
+	/* hover */
+	
+	.btn:hover {
+		background-color: var(--light-blue);
+	}
+
+	.social-media a:hover {
+		color: var(--light-blue) !important;
+	}
+
+	/* footer */
+
+	.footer {
+		background-color: var(--black);
+		border-top: var(--light-blue) 3px solid;
+	}
+
+	.copyright,
+	a,
+	.education-p {
+		color: var(--white);
+	}
 }
