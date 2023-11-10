@@ -1,0 +1,79 @@
+:root {
+	--black: #000;
+	--white: #fff;
+	--light-blue: #008895;
+}
+
+/* home page header and paragraph */
+
+.page-header {
+	font-size: 1.1rem;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+.index-p {
+	background-color: var(--white);
+	color: var(--black);
+	border: var(--black) 3px solid; 
+	margin: 25px;
+	padding: 18px 10px;
+	font-size: 1rem;
+	text-align: center;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+.index-p p {
+	margin-top: 10px;
+}
+
+.btn {
+	background-color: var(--black);
+	border-color: var(--black);
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.btn a {
+	color: var(--white);
+}
+
+/* hover */
+
+.btn a:hover {
+	color: var(--light-blue);
+}
+
+/* dark mode */
+
+@media (prefers-color-scheme: dark) {
+	.index-p {
+		background-color: var(--black);
+		border: var(--light-blue) 3px solid;
+		text-decoration: none;
+		color: var(--white);
+		margin: 25px;
+		padding: 10px;
+		font-size: 1rem;
+		text-align: center;
+		opacity: 0.8;
+	}
+
+	.btn {
+		background-color: var(--white);
+		color: var(--black);
+		border-color: var(--light-blue);
+	}
+	
+	.btn a {
+		color: var(--black);
+		text-decoration: none;
+	}
+	
+	/* hover */
+	
+	.btn:hover {
+		background-color: var(--light-blue);
+	}
+}
