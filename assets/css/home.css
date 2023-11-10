@@ -1,7 +1,8 @@
 :root {
 	--black: #000;
 	--white: #fff;
-	--light-blue: #008895;
+	--blue: #2C8DBA;
+	--cyan-blue: #008895;
 }
 
 /* home page header and paragraph */
@@ -42,7 +43,7 @@
 /* hover */
 
 .btn a:hover {
-	color: var(--light-blue);
+	color: var(--blue);
 }
 
 /* dark mode */
@@ -50,7 +51,7 @@
 @media (prefers-color-scheme: dark) {
 	.index-p {
 		background-color: var(--black);
-		border: var(--light-blue) 3px solid;
+		border: var(--cyan-blue) 3px solid;
 		text-decoration: none;
 		color: var(--white);
 		margin: 25px;
@@ -63,7 +64,7 @@
 	.btn {
 		background-color: var(--white);
 		color: var(--black);
-		border-color: var(--light-blue);
+		border-color: var(--cyan-blue);
 	}
 	
 	.btn a {
@@ -74,6 +75,6 @@
 	/* hover */
 	
 	.btn:hover {
-		background-color: var(--light-blue);
+		background-color: var(--cyan-blue);
 	}
 }

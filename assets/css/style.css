@@ -1,11 +1,12 @@
 :root {
 	--black: #000;
 	--white: #fff;
-	--light-blue: #008895;
+	--blue: #2C8DBA;
+	--cyan-blue: #008895;
 }
 
 body {
-	background: var(--white) url('../images/coding-image.jpg') no-repeat;
+	background: var(--white) url('../images/light-mode-image.jpg') no-repeat;
 	background-size: 100%;
 	min-height: 100vh;
 	display: flex;
@@ -16,11 +17,11 @@ body {
 
 .navbar {
 	background-color: var(--white);
-	border-bottom: var(--black) 3px solid; 
+	/* border-bottom: var(--black) 3px solid;  */ /* unsure if it i should keep the border or not  */
 }
 
 .navbar-brand {
-	color: var(--light-blue) !important;
+	color: var(--black) !important;
 	text-transform: uppercase;
 }
 
@@ -33,7 +34,7 @@ body {
 .footer {
 	background-color: var(--white);
 	margin-top: auto;
-	border-top: var(--black) 3px solid;
+	/* border-top: var(--black) 3px solid;  */ /* unsure if it i should keep the border or not  */
 }
 
 .copyright {
@@ -67,19 +68,19 @@ a {
 /* active */
 
 .active {
-	color: var(--light-blue) !important;
+	color: var(--black) !important;
 }
 
 /* animation */
 
 .nav-item a {
 	position: relative;
-	color: var(--light-blue);
+	color: var(--black);
 	text-decoration: none;
 }
 
 .nav-item a:hover {
-	color: var(--light-blue) !important;
+	color: var(--black) !important;
 }
 
 .nav-item a::before {
@@ -90,7 +91,7 @@ a {
 	height: 2px;
 	bottom: 0;
 	left: 0;
-	background-color: var(--light-blue);
+	background-color: var(--black);
 	transform: scaleX(0);
 	transition: transform 0.3s ease;
 }
@@ -109,41 +110,57 @@ a {
 
 @media (prefers-color-scheme: dark) {
 	body {
-		background-color: var(--black);
+		background: var(--black) url('../images/coding-image.jpg') no-repeat;;
+		background-size: 100%;
+		min-height: 100vh;
 	}
 
 	/* nav menu */
 
 .navbar {
 	background-color: var(--black);
-	border-bottom: var(--light-blue) 3px solid;
+	border-bottom: var(--cyan-blue) 3px solid;
 }
 
 .navbar-brand,
 .nav-item a {
-	color: var(--light-blue) !important;
+	color: var(--cyan-blue) !important;
 }
 	
 	/* hover */
 	
 	.btn:hover {
-		background-color: var(--light-blue);
+		background-color: var(--cyan-blue);
 	}
 
 	.social-media a:hover {
-		color: var(--light-blue) !important;
+		color: var(--cyan-blue) !important;
 	}
 
 	/* footer */
 
 	.footer {
 		background-color: var(--black);
-		border-top: var(--light-blue) 3px solid;
+		border-top: var(--cyan-blue) 3px solid;
 	}
 
 	.copyright,
 	a,
 	.education-p {
 		color: var(--white);
+	}
+
+	/* animation */
+
+	.nav-item a {
+		color: var(--cyan-blue);
+	}
+
+	.nav-item a:hover {
+		color: var(--cyan-blue) !important;
+	}
+
+	.nav-item a::before {
+		background-color: var(--cyan-blue);
 	}
 }
