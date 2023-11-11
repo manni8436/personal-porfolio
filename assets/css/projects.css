@@ -15,7 +15,7 @@
 }
 
 .card {
-	height: 40vh;
+	height: 39vh;
 	width: 60vw;
   padding: 10px;
   border-radius: 10px;
@@ -26,7 +26,40 @@
 	text-decoration: underline 2px;
 }
 
+.card-body {
+	padding: 0;
+}
+
+/* hover */
+
 .card:hover {
 	box-shadow: var(--blue) 5px 10px 15px;
 }
 
+/* dark mode */
+
+@media (prefers-color-scheme: dark) {
+	.personal-project-header {
+		color: var(--cyan-blue);
+	}
+	
+	.card {
+		background-color: var(--black);
+		box-shadow: var(--black) 5px 10px 15px;
+		border: var(--cyan-blue) 2px solid;
+	}
+	
+	.card-title {
+		color: var(--white);
+	}
+	
+	.card-text {
+		color: var(--white);
+	}
+	
+	/* hover */
+	
+	.card:hover {
+		box-shadow: var(--blue) 5px 10px 15px;
+	}
+}
