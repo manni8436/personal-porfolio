@@ -17,7 +17,6 @@ body {
 
 .navbar {
 	background-color: var(--white);
-	/* border-bottom: var(--black) 3px solid;  */ /* unsure if it i should keep the border or not  */
 }
 
 .navbar-brand {
@@ -34,7 +33,6 @@ body {
 .footer {
 	background-color: var(--white);
 	margin-top: auto;
-	/* border-top: var(--black) 3px solid;  */ /* unsure if it i should keep the border or not  */
 }
 
 .copyright {
