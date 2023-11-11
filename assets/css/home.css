@@ -42,6 +42,10 @@
 
 /* hover */
 
+.btn:hover {
+	color: var(--black);
+}
+
 .btn a:hover {
 	color: var(--blue);
 }
