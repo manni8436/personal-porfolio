@@ -17,6 +17,7 @@ body {
 
 .navbar {
 	background-color: var(--white);
+	border-bottom: var(--black) 3px solid;
 }
 
 .navbar-brand {
@@ -32,6 +33,7 @@ body {
 /*-----------------------------------------------------footer*/
 .footer {
 	background-color: var(--white);
+	border-top: var(--black) 3px solid;
 	margin-top: auto;
 }
 
