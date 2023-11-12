@@ -56,4 +56,10 @@
 	.card-text {
 		color: var(--white);
 	}
+
+	/* hover */
+
+	.card:hover {
+		box-shadow: var(--cyan-blue) 5px 10px 15px;
+	}
 }
