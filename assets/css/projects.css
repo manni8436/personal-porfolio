@@ -5,10 +5,12 @@
 	--cyan-blue: #008895;
 }
 
-.personal-project-header {
+.personal-project-header,
+.hackathon-project-header {
 	color: var(--white);
 	padding: 6px;
 	font-size: 30px;
+	display: inline-block;
 	text-transform: uppercase;
 	text-decoration: underline;
 	text-align: center;
@@ -39,7 +41,8 @@
 /* dark mode */
 
 @media (prefers-color-scheme: dark) {
-	.personal-project-header {
+	.personal-project-header,
+	.hackathon-project-header {
 		color: var(--cyan-blue);
 	}
 	
