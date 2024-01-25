@@ -1,0 +1,54 @@
+:root {
+	--black: #000;
+	--white: #fff;
+	--blue: #2C8DBA;
+	--cyan-blue: #008895;
+}
+.tech-stack {
+	background-color: var(--white);
+	color: var(--black);
+	border: var(--black) 3px solid; 
+	text-align: center;
+	opacity: 0.8;
+}
+
+.tech-header {
+	padding: 10px;
+	font-size: 30px;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+.tech-language-header {
+	font-size: 25px;
+}
+
+.tech-frontend-header,
+.tech-backend-header,
+.tech-database-header,
+.tech-version-control-header,
+.tech-development-header,
+.tech-learning-header,
+.tech-future-header {
+	text-transform: capitalize;
+	text-decoration: underline;
+}
+
+.tech-language-item {
+	padding: 11px;
+	display: inline-block;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background: var(--black) url('../images/coding-image.jpg') no-repeat;
+		background-size: 100%;
+		min-height: 100vh;
+	}	
+
+	.tech-stack {
+		background-color: var(--black);
+		color: var(--cyan-blue);
+		border: var(--cyan-blue) 3px solid;
+	}
+}
