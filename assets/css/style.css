@@ -110,7 +110,7 @@ a {
 
 @media (prefers-color-scheme: dark) {
 	body {
-		background: var(--black) url('../images/coding-image.jpg') no-repeat;;
+		background: var(--black) url('../images/coding-image.jpg') no-repeat;
 		background-size: 100%;
 		min-height: 100vh;
 	}
