@@ -68,7 +68,7 @@ a {
 /* active */
 
 .active {
-	color: var(--black) !important;
+	color: var(--blue) !important;
 }
 
 /* animation */
