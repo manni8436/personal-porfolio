@@ -1,0 +1,30 @@
+:root {
+	--black: #000;
+	--white: #fff;
+	--blue: #2C8DBA;
+	--cyan-blue: #008895;
+}
+
+.fa-briefcase {
+	color: var(--black);
+	margin-top: 100px;
+}
+
+.metroline-header {
+	text-transform: capitalize;
+	text-decoration: underline;
+}
+
+.metroline-job {
+	background-color: var(--white);
+	color: var(--black);
+	border: var(--black) 3px solid; 
+	margin-top: 20px;
+	font-size: 1rem;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+.hide {
+	display: none;
+}
