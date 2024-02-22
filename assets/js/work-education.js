@@ -1,11 +1,12 @@
-document.addEventListener('click', function (event) {
-		if(event.target.classList.contains('briefcase')) {
-			let jobDescription = document.getElementsByClassName('metroline-job');
+for (const btn of document.querySelectorAll(".job-button, .education-button")) {
+	btn.addEventListener("click", showJobDescription);
 
-			if(jobDescription[0].classList.contains('hide')) {
-				jobDescription[0].classList.remove('hide');
-			} else {
-				jobDescription[0].classList.add('hide');
-			}
+	function showJobDescription(e) {
+		const jobRefs = document.querySelectorAll(".job, .education");
+
+		for (const jobRef of jobRefs) {
+			jobRef.classList.add("hide");
 		}
-});
+		jobRefs[e.currentTarget.dataset.index].classList.remove("hide");
+	}
+};
