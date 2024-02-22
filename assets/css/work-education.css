@@ -5,26 +5,78 @@
 	--cyan-blue: #008895;
 }
 
-.fa-briefcase {
+.job-button,
+.education-button {
+	all: unset;
+}
+
+.fa-briefcase,
+.fa-school {
 	color: var(--black);
 	margin-top: 100px;
 }
 
-.metroline-header {
+.job-header,
+.education-header {
+	text-align: center;
 	text-transform: capitalize;
 	text-decoration: underline;
 }
 
-.metroline-job {
+.job,
+.education {
 	background-color: var(--white);
 	color: var(--black);
 	border: var(--black) 3px solid; 
-	margin-top: 20px;
+	padding: 10px;
 	font-size: 1rem;
 	text-decoration: none;
 	opacity: 0.8;
 }
 
+.metroline-job,
+.hermes-job,
+.ocado-job,
+.education {
+	position: absolute;
+	height: max-content;
+	width: 60vw;
+	top: 30%;
+}
+
+.job-role-header {
+	text-decoration: underline;
+}
+
+.cv {
+	margin-top: 15%;
+}
+
+.education-bullets {
+	font-size: large;
+	list-style-type: none;
+}
+
 .hide {
 	display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+
+	.tech-stack {
+		background-color: var(--black);
+		color: var(--cyan-blue);
+		border: var(--cyan-blue) 3px solid;
+	}
+
+	.fa-briefcase,
+	.fa-school {
+		color: var(--cyan-blue);
+	}
+
+	.job {
+		background-color: var(--black);
+		color: var(--cyan-blue);
+		border: var(--cyan-blue) 3px solid; 
+	}
 }
