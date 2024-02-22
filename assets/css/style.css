@@ -115,8 +115,6 @@ a {
 		min-height: 100vh;
 	}
 
-	/* nav menu */
-
 .navbar {
 	background-color: var(--black);
 	border-bottom: var(--cyan-blue) 3px solid;
@@ -127,8 +125,6 @@ a {
 	color: var(--cyan-blue) !important;
 }
 	
-	/* hover */
-	
 	.btn:hover {
 		background-color: var(--cyan-blue);
 	}
@@ -136,8 +132,6 @@ a {
 	.social-media a:hover {
 		color: var(--cyan-blue) !important;
 	}
-
-	/* footer */
 
 	.footer {
 		background-color: var(--black);
@@ -147,14 +141,13 @@ a {
 	.copyright,
 	a,
 	.education-p {
-		color: var(--white);
+		color: var(--cyan-blue);
 	}
-
-	/* animation */
 
 	.nav-item a {
 		color: var(--cyan-blue);
 	}
+	
 
 	.nav-item a:hover {
 		color: var(--cyan-blue) !important;
