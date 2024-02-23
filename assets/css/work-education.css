@@ -18,6 +18,7 @@
 
 .fa-award:hover {
 	color: var(--blue);
+	/* maybe remove this if you sort the underline animation */
 }
 
 .job-header,
@@ -100,7 +101,6 @@
 	/* this works but it's not working 100% the way it should, as the underline affect only stays in place if you drag the nav item first, unsure why*/
 }
 
-
 @media (prefers-color-scheme: dark) {
 
 	.education {
@@ -127,5 +127,16 @@
 		background-color: var(--black);
 		color: var(--cyan-blue);
 		border: var(--cyan-blue) 3px solid; 
+	}
+
+	/* job/education underline animation */
+
+	.job-button,
+	.job-button:hover {
+		color: var(--cyan-blue);
+	}
+
+	.job-button::before {
+		background-color: var(--cyan-blue);
 	}
 }
