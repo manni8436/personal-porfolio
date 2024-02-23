@@ -16,6 +16,15 @@
 	margin-top: 100px;
 }
 
+.fa-briefcase:hover,
+.fa-school:hover {
+	color: var(--white);
+}
+
+.fa-award:hover {
+	color: var(--blue);
+}
+
 .job-header,
 .education-header {
 	text-align: center;
@@ -63,7 +72,7 @@
 
 @media (prefers-color-scheme: dark) {
 
-	.tech-stack {
+	.education {
 		background-color: var(--black);
 		color: var(--cyan-blue);
 		border: var(--cyan-blue) 3px solid;
@@ -71,8 +80,17 @@
 
 	.fa-briefcase,
 	.fa-school {
-		color: var(--cyan-blue);
+		color: var(--white);
 	}
+
+	.fa-award:hover {
+		color: var(--white);
+	}
+
+.fa-briefcase:hover,
+.fa-school:hover {
+	color: var(--cyan-blue);
+}
 
 	.job {
 		background-color: var(--black);
