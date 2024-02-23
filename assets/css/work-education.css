@@ -16,11 +16,6 @@
 	margin-top: 100px;
 }
 
-.fa-briefcase:hover,
-.fa-school:hover {
-	color: var(--white);
-}
-
 .fa-award:hover {
 	color: var(--blue);
 }
@@ -69,6 +64,42 @@
 .hide {
 	display: none;
 }
+
+/* job description underline animation */
+
+.job-button {
+	position: relative;
+	color: var(--black);
+	text-decoration: none;
+}
+
+.job-button:hover {
+	color: var(--black) !important;
+}
+
+.job-button::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 3px;
+	bottom: -6px;
+	left: 0;
+	background-color: var(--black);
+	transform: scaleX(0);
+	transition: transform 0.3s ease;
+}
+
+.job-button:hover::before {
+	transform: scaleX(1);
+}
+
+/*----------------------------------------------active */
+.job-button:active::before { 
+	transform: scaleX(1); 
+	/* this works but it's not working 100% the way it should, as the underline affect only stays in place if you drag the nav item first, unsure why*/
+}
+
 
 @media (prefers-color-scheme: dark) {
 

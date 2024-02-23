@@ -83,7 +83,12 @@ a {
 }
 
 .nav-item a:hover {
-	color: var(--black) !important;
+	color: var(--black) !important; 
+	/* 
+	possibly remove this section of code, 
+	once you figure out how to make the underline affect stay in place
+	when you hover over the nav item
+	*/
 }
 
 .nav-item a::before {
