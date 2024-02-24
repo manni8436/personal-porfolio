@@ -1,0 +1,65 @@
+:root {
+	--black: #000;
+	--white: #fff;
+	--blue: #2C8DBA;
+	--cyan-blue: #008895;
+}
+
+.contact-me-box {
+	background-color: var(--white);
+	color: var(--black);
+	border: var(--black) 3px solid; 
+	margin-top: 3vh;
+	padding: 10px;
+	text-align: center;
+	opacity: 0.8;
+}
+
+.form-group {
+	margin: 0 auto;
+	padding: 5px;
+}
+
+#firstname,
+#lastname,
+#email,
+#message {
+	border: var(--black) 3px solid; 
+}
+
+.btn {
+	background-color: var(--black);
+	border-color: var(--black);
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+	.contact-me-box {
+		background-color: var(--black);
+		color: var(--cyan-blue);
+		border: var(--cyan-blue) 3px solid;
+	}
+
+	.btn {
+		background-color: var(--white);
+		color: var(--black);
+		border-color: var(--cyan-blue);
+	}
+	
+	.btn a {
+		color: var(--black);
+		text-decoration: none;
+	}
+
+	#firstname,
+	#lastname,
+	#email,
+	#message {
+		border: var(--cyan-blue) 3px solid; 
+	}
+	
+	.btn:hover {
+		background-color: var(--cyan-blue);
+	}
+}
