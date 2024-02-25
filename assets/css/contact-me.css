@@ -17,13 +17,11 @@
 
 .form-group {
 	margin: 0 auto;
-	padding: 5px;
+	padding: 9px;
 }
 
-#firstname,
-#lastname,
-#email,
-#message {
+#firstname, #lastname,
+#email, #message {
 	border: var(--black) 3px solid; 
 }
 
@@ -52,11 +50,16 @@
 		text-decoration: none;
 	}
 
-	#firstname,
-	#lastname,
-	#email,
-	#message {
+	#firstname, #lastname,
+	#email, #message {
 		border: var(--cyan-blue) 3px solid; 
+	}
+
+	#firstname::placeholder, #lastname::placeholder,
+	#email::placeholder, #message::placeholder {
+		background-color: var(--black);
+		color: var(--cyan-blue);
+		font-weight: bolder;
 	}
 	
 	.btn:hover {
