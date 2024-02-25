@@ -7,8 +7,11 @@ window.onload = function sendForm() {
 		// changes the button text to "Sending..."
 		submitButton.innerText = "Sending...";
 
+		const serviceID = 'service_2cdva59';
+		const templateID = 'template_txnntph';
+
 		// sendForm values from your emailjs account
-		emailjs.sendForm("service_2cdva59", "template_txnntph", "#contact-form").then(
+		emailjs.sendForm(serviceID, templateID, "#contact-form").then(
 			(response) => {
 				// changes the button text to "Message Sent Successfully!"
 				submitButton.innerText = "Message Sent Successfully!";
