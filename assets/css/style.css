@@ -8,6 +8,7 @@
 body {
 	background: var(--white) url('../images/light-mode-image.jpg') no-repeat;
 	backdrop-filter: brightness(70%);
+	background-size: 100%;
 	display: flex;
 	flex-direction: column;
 }

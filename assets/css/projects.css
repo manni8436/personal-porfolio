@@ -66,3 +66,13 @@
 		box-shadow: var(--cyan-blue) 5px 10px 15px;
 	}
 }
+
+@media screen and (max-width: 320px){
+	.project-cards {
+		margin: 1px;
+	}
+
+	.card {
+		width: 85vw;
+	}
+}
