@@ -32,13 +32,9 @@
 	padding: 0;
 }
 
-/* hover */
-
 .card:hover {
 	box-shadow: var(--blue) 5px 10px 15px;
 }
-
-/* dark mode */
 
 @media (prefers-color-scheme: dark) {
 	.personal-project-header,
@@ -67,12 +63,49 @@
 	}
 }
 
-@media screen and (max-width: 320px){
+@media screen and (min-width: 320px){
 	.project-cards {
 		margin: 1px;
 	}
 
 	.card {
 		width: 85vw;
+	}
+}
+
+@media screen and (min-width: 480px){
+	.project-cards {
+		margin: 10px;
+	}
+
+	.card {
+		width: 85vw;
+	}
+}
+
+@media screen and (min-width: 576px){
+	.project-cards {
+		margin-left: 40px;
+	}
+
+	.card {
+		width: 90vw;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.card {
+		max-width: 265px !important;
+		margin: 20px;
+	}
+
+	.project-cards {
+		width: 100vw;
+	}
+}
+
+@media screen and (min-width: 992px){
+	.card {
+		max-width: 400px !important;
 	}
 }
