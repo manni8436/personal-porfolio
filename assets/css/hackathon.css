@@ -1,0 +1,109 @@
+:root {
+	--black: #000;
+	--white: #fff;
+	--blue: #2C8DBA;
+	--cyan-blue: #008895;
+}
+
+.hackathon-project-header {
+	color: var(--white);
+	padding: 6px;
+	font-size: 30px;
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-align: center;
+}
+
+.card {
+	height: 39vh;
+	width: 60vw;
+  padding: 10px;
+  border-radius: 10px;
+	box-shadow: var(--black) 5px 10px 15px;
+}
+
+.card-title {
+	text-decoration: underline 2px;
+}
+
+.card-body {
+	padding: 0;
+}
+
+.card:hover {
+	box-shadow: var(--blue) 5px 10px 15px;
+}
+
+@media (prefers-color-scheme: dark) {
+	.hackathon-project-header {
+		color: var(--cyan-blue);
+	}
+	
+	.card {
+		background-color: var(--black);
+		box-shadow: var(--black) 5px 10px 15px;
+		border: var(--cyan-blue) 2px solid;
+	}
+	
+	.card-title {
+		color: var(--white);
+	}
+	
+	.card-text {
+		color: var(--white);
+	}
+
+	/* hover */
+
+	.card:hover {
+		box-shadow: var(--cyan-blue) 5px 10px 15px;
+	}
+}
+
+@media screen and (min-width: 320px){
+	.project-cards {
+		margin: 1px;
+	}
+
+	.card {
+		width: 85vw;
+	}
+}
+
+@media screen and (min-width: 480px){
+	.project-cards {
+		margin: 10px;
+	}
+
+	.card {
+		width: 85vw;
+	}
+}
+
+@media screen and (min-width: 576px){
+	.project-cards {
+		margin-left: 40px;
+	}
+
+	.card {
+		width: 90vw;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.card {
+		max-width: 265px !important;
+		margin: 20px;
+	}
+
+	.project-cards {
+		width: 100vw;
+	}
+}
+
+@media screen and (min-width: 992px){
+	.card {
+		max-width: 400px !important;
+	}
+}
