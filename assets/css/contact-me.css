@@ -32,6 +32,30 @@
 	text-decoration: none;
 }
 
+.modal {
+	top: 300px;
+}
+
+.modal-header,
+.modal-body {
+	text-align: center;
+	text-transform: uppercase;
+	border-bottom: var(--black) 3px solid;
+}
+
+.modal-content {
+	border: var(--black) 3px solid;
+}
+
+.close-button {
+	color: var(--white);
+}
+
+.close-button:hover {
+	background-color: var(--blue);
+	color: var(--white);
+}
+
 @media (prefers-color-scheme: dark) {
 	.contact-me-box {
 		background-color: var(--black);
@@ -64,5 +88,29 @@
 	
 	.btn:hover {
 		background-color: var(--cyan-blue);
+	}
+
+	.modal-header,
+	.modal-body {
+		background-color: var(--black);
+		border-bottom: var(--cyan-blue) 3px solid;
+	}
+
+	.modal-content {
+		color: var(--white);
+		border: var(--cyan-blue) 3px solid;
+	}
+
+	.modal-footer {
+		background-color: var(--black);
+	}	
+
+	.close-button {
+		color: var(--black);
+	}
+
+	.close-button:hover {
+		background-color: var(--cyan-blue);
+		color: var(--black);
 	}
 }
