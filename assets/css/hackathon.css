@@ -5,7 +5,6 @@
 	--cyan-blue: #008895;
 }
 
-.personal-project-header,
 .hackathon-project-header {
 	color: var(--white);
 	padding: 6px;
@@ -37,7 +36,6 @@
 }
 
 @media (prefers-color-scheme: dark) {
-	.personal-project-header,
 	.hackathon-project-header {
 		color: var(--cyan-blue);
 	}

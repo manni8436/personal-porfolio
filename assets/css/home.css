@@ -50,8 +50,6 @@
 	color: var(--blue);
 }
 
-/* dark mode */
-
 @media (prefers-color-scheme: dark) {
 	.index-p {
 		background-color: var(--black);

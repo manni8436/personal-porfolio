@@ -43,3 +43,152 @@
 		border: var(--cyan-blue) 3px solid;
 	}
 }
+
+@media screen and (min-width: 320px){
+	.tech-stack {
+		margin-top: 6vh;
+		padding: 2px;
+	}
+
+	.tech-header {
+		font-size: 22px;
+	}
+
+	.tech-frontend-header,
+	.tech-backend-header,
+	.tech-database-header,
+	.tech-version-header,
+	.tech-development-header,
+	.tech-learning-header,
+	.tech-future-header {
+		font-size: 22px;
+	}
+
+	.tech-language-item {
+		padding: 4px;
+	}
+
+	img {
+		width: 35px;
+	}
+}
+
+@media screen and (min-width: 480px){
+	.tech-stack {
+		margin-top: 5vh;
+		padding: 4px;
+	}
+
+	.tech-header {
+		font-size: 25px;
+	}
+
+	.tech-frontend-header,
+	.tech-backend-header,
+	.tech-database-header,
+	.tech-version-header,
+	.tech-development-header,
+	.tech-learning-header,
+	.tech-future-header {
+		font-size: 25px;
+		padding: 4px;
+	}
+
+	.tech-language-item {
+		padding: 5px;
+	}
+
+	img {
+		width: 45px;
+	}
+}
+
+@media screen and (min-width: 576px){
+	.tech-stack {
+		margin-top: 6vh;
+		padding: 6px;
+	}
+
+	.tech-header {
+		font-size: 26px;
+	}
+
+	.tech-frontend-header,
+	.tech-backend-header,
+	.tech-database-header,
+	.tech-version-header,
+	.tech-development-header,
+	.tech-learning-header,
+	.tech-future-header {
+		font-size: 26px;
+		padding: 4px;
+	}
+
+	.tech-language-item {
+		padding: 5px;
+	}
+
+	img {
+		width: 48px;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.tech-stack {
+		margin-top: 8vh;
+		padding: 8px;
+	}
+
+	.tech-header {
+		font-size: 28px;
+	}
+
+	.tech-frontend-header,
+	.tech-backend-header,
+	.tech-database-header,
+	.tech-version-header,
+	.tech-development-header,
+	.tech-learning-header,
+	.tech-future-header {
+		font-size: 28px;
+		padding: 4px;
+	}
+
+	.tech-language-item {
+		padding: 5px;
+	}
+
+	img {
+		width: 50px;
+	}
+}
+
+@media screen and (min-width: 992px){
+	.tech-stack {
+		margin-top: 8vh;
+		padding: 10px;
+	}
+
+	.tech-header {
+		font-size: 30px;
+	}
+
+	.tech-frontend-header,
+	.tech-backend-header,
+	.tech-database-header,
+	.tech-version-header,
+	.tech-development-header,
+	.tech-learning-header,
+	.tech-future-header {
+		font-size: 30px;
+		padding: 4px;
+	}
+
+	.tech-language-item {
+		padding: 5px;
+	}
+
+	img {
+		width: 60px;
+	}
+}
